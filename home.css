@@ -1,0 +1,373 @@
+/* General Styles */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+/* NAVBAR CSS JANGAN DIGANTI */
+.navbar {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar .logo img {
+    height: 50px;
+}
+.logo img {
+    transition: all 0.3s ease; /* Animasi halus */
+}
+
+.logo img:hover {
+    transform: scale(1.1); /* Membesarkan logo 10% */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Efek bayangan */
+}
+
+.navbar-nav .nav-link {
+    color: #000000 !important;
+    font-weight: 500;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link.active {
+    color: #4a90e2;
+}
+.navbar-nav .nav-link:hover {
+    color: #4a90e2 !important; /* Warna biru saat hover */
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url('asset/SMKN1Denpasar.png') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 62px; /* Ukuran teks */
+    color: white; /* Warna teks */
+    font-weight:  bold;
+    text-align: center;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    line-height: 1.2; /* Sesuaikan tinggi baris agar rapi */
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 10px 0 0;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+.info, .features-area, .featured-services-area {
+    padding: 60px 20px;
+    text-align: left; /* Ubah menjadi rata kiri */
+}
+
+.info h5, .features-area h5, .featured-services-area h5 {
+    font-size: 18px;
+    color: #007bff;
+    margin-bottom: 10px;
+    font-weight: 600; /* Tebalkan teks */
+}
+
+.info h2, .features-area h2, .featured-services-area h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: 700; /* Tebalkan judul */
+    line-height: 1.2; /* Tingkatkan jarak antar baris */
+}
+
+.info p, .features-area p, .featured-services-area p {
+    max-width: 800px;
+    margin: 0 auto 30px; /* Pusatkan paragraf */
+    font-size: 16px;
+    line-height: 1.6; /* Tingkatkan keterbacaan */
+    color: #555; /* Warna teks yang lebih lembut */
+}
+.info p:last-of-type {
+    background-color: #f9f9f9; /* Latar belakang ringan */
+    padding: 20px;
+    border-left: 4px solid #007bff; /* Garis biru di sebelah kiri */
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+    margin-top: 20px; /* Jarak dari elemen sebelumnya */
+}
+.features-area {
+    background-color: #F3F7FD;
+}
+
+.features-area .item, .featured-services-area .item {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.features-area .item:hover, .featured-services-area .item:hover {
+    transform: translateY(-10px);
+}
+
+.features-area .item i, .featured-services-area .item i {
+    font-size: 40px;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.features-area .item h5, .featured-services-area .item h5 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 600; /* Tebalkan teks */
+}
+
+.features-area .item p, .featured-services-area .item p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5; /* Tingkatkan keterbacaan */
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .info, .features-area, .featured-services-area {
+        padding: 40px 15px;
+    }
+}
+.video-play-button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background-color: #086ad8;
+    color: #fff;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+.video-play-button:hover {
+    transform: scale(1.1);
+}
+
+.video-play-button i {
+    font-size: 24px;
+}
+
+.video-text {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    margin-top: 10px; /* Jarak dari tombol */
+}
+.footer-container {
+    background-color: #001D4C;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 0;
+}
+
+.footer-left, .footer-middle, .footer-right {
+    width: 30%;
+    color: white;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.footer-left a {
+    color: lightblue;
+    text-decoration: none;
+}
+
+.footer-left ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.footer-left ul li {
+    display: inline-block;
+}
+
+.footer-left ul li img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-middle ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-middle ul li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.footer-right iframe {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+.footer-copyright {
+    background-color: #0F2A57;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #007bff;
+}
+.subtitle {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+.gallery-item {
+    position: relative;
+    width: 30%;
+    max-width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.gallery-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.gallery-item::after {
+    content: "Baca Selengkapnya";
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #086ad8;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.gallery-item:hover::after {
+    opacity: 1;
+}
+@media (max-width: 768px) {
+    .gallery-item {
+        width: 45%;
+    }
+}
+@media (max-width: 480px) {
+    .gallery-item {
+        width: 90%;
+    }
+}
+/* Animasi Fade In */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .footer-left, .footer-middle, .footer-right {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 10px 0;
+    }
+
+    .navbar-toggler {
+        border-color: #007bff;
+    }
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .info h2 {
+        font-size: 28px;
+    }
+
+    .features-area h2 {
+        font-size: 28px;
+    }
+
+    .featured-services-area h5 {
+        font-size: 16px;
+    }
+}

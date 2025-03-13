@@ -1,0 +1,295 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* navbar css navbar awal */
+.navbar {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 0px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar .logo img {
+    height: 50px;
+}
+.logo img {
+    transition: all 0.3s ease; /* Animasi halus */
+}
+
+.logo img:hover {
+    transform: scale(1.1); /* Membesarkan logo 10% */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Efek bayangan */
+}
+
+.navbar-nav .nav-link {
+    color: #000000 !important;
+    font-weight: 500;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link.active {
+    color: #4a90e2;
+}
+.navbar-nav .nav-link:hover {
+    color: #4a90e2 !important; /* Warna biru saat hover */
+}
+.breadcrumb-area {
+    background: url('asset/MANAGEMENT.png') no-repeat center center/cover;
+    padding: 200px 0;
+}
+.col-lg-6 h2 {
+    font-size: 40px; /* Ukuran teks */
+    font-weight: bold; /* Tebal */
+    color: white; /* Warna teks */
+    text-align: left; /* Rata kiri */
+    margin: 0; /* Hilangkan margin */
+    line-height: 1.2; /* Sesuaikan tinggi baris */
+    white-space: nowrap; /* Mencegah teks turun ke bawah */
+}
+
+.col-lg-6 h2 {
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.title {
+    color: #007bff;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center; /* Memastikan judul berada di tengah */
+}
+
+.kepala-sekolah {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.kepala-sekolah img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    transition: transform 0.3s ease; /* Animasi saat gambar diperbesar */
+}
+
+.kepala-sekolah img:hover {
+    transform: scale(1.1); /* Memperbesar gambar saat dihover */
+}
+
+.kepala-sekolah strong {
+    color: blue;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.title {
+    color: #007bff;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center; /* Memastikan judul berada di tengah */
+}
+
+.kepala-sekolah {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.kepala-sekolah img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    transition: transform 0.3s ease; /* Animasi saat gambar diperbesar */
+}
+
+.kepala-sekolah img:hover {
+    transform: scale(1.1); /* Memperbesar gambar saat dihover */
+}
+
+.kepala-sekolah strong {
+    color: blue;
+}
+
+.pengurus {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Menengahkan kartu secara horizontal */
+    gap: 20px; /* Jarak antar kartu */
+    max-width: 1200px; /* Lebar maksimum container */
+    margin: 0 auto; /* Menengahkan container */
+}
+
+.pengurus .card {
+    width: calc(25% - 20px); /* 4 kartu per baris dengan jarak 20px */
+    text-align: center;
+    box-sizing: border-box; /* Memastikan padding dan border tidak mempengaruhi lebar */
+    background-color: white; /* Warna latar belakang card */
+    border: none; /* Menghilangkan border */
+    padding: 15px; /* Padding untuk card */
+    border-radius: 10px; /* Membuat sudut card lebih lembut */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan shadow untuk efek card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animasi saat card dihover */
+}
+
+.pengurus .card:hover {
+    transform: scale(1.05); /* Memperbesar card saat dihover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Menambahkan shadow yang lebih besar saat dihover */
+}
+
+.pengurus img {
+    width: 120px; /* Ukuran gambar yang lebih besar */
+    height: 120px; /* Ukuran gambar yang lebih besar */
+    border-radius: 10px;
+    display: block; /* Membuat gambar menjadi block element */
+    margin: 0 auto; /* Menengahkan gambar secara horizontal */
+    transition: transform 0.3s ease; /* Animasi saat gambar diperbesar */
+}
+
+.pengurus img:hover {
+    transform: scale(1.1); /* Memperbesar gambar saat dihover */
+}
+
+.pengurus .card strong {
+    color: blue;
+}
+
+@media (max-width: 768px) {
+    .pengurus .card {
+        width: calc(50% - 20px); /* 2 kartu per baris pada layar kecil */
+    }
+}
+
+@media (max-width: 480px) {
+    .pengurus .card {
+        width: 100%; /* 1 kartu per baris pada layar sangat kecil */
+    }
+}
+/* code css navbar akhir */
+.footer-container {
+    background-color: #001D4C;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 0;
+}
+
+.footer-left, .footer-middle, .footer-right {
+    width: 30%;
+    color: white;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.footer-left a {
+    color: lightblue;
+    text-decoration: none;
+}
+
+.footer-left ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.footer-left ul li {
+    display: inline-block;
+}
+
+.footer-left ul li img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-middle ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-middle ul li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.footer-right iframe {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+.footer-copyright {
+    background-color: #0F2A57;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+
+/* Agar navbar lebih responsif */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 10px 0;
+    }
+
+    .navbar-toggler {
+        border-color: #007bff;
+    }
+
+}
+
+/* Responsif untuk tampilan lebih kecil */
+@media (max-width: 576px) {
+    .breadcrumb-area h2 {
+        font-size: 20px;
+    }
+    .breadcrumb-area .breadcrumb {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .footer-left, .footer-middle, .footer-right {
+        width: 100%;
+    }
+}

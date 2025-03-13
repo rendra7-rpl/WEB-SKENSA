@@ -1,0 +1,547 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0  ;
+}
+/* NAVBAR CSS JANGAN DIGANTI */
+.navbar {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 0px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar .logo img {
+    height: 50px;
+}
+.logo img {
+    transition: all 0.3s ease; /* Animasi halus */
+}
+
+.logo img:hover {
+    transform: scale(1.1); /* Membesarkan logo 10% */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Efek bayangan */
+}
+
+.navbar-nav .nav-link {
+    color: #000000 !important;
+    font-weight: 500;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link.active {
+    color: #4a90e2;
+}
+.navbar-nav .nav-link:hover {
+    color: #4a90e2 !important; /* Warna biru saat hover */
+}
+.breadcrumb-area {
+    background: url('asset/SMKN1Denpasar1.png') no-repeat center center/cover;
+    padding: 200px 0;
+}
+.col-lg-6 h2 {
+    font-size: 40px; /* Ukuran teks */
+    font-weight: bold; /* Tebal */
+    color: white; /* Warna teks */
+    text-align: left; /* Rata kiri */
+    margin: 0; /* Hilangkan margin */
+    line-height: 1.2; /* Sesuaikan tinggi baris */
+    white-space: nowrap; /* Mencegah teks turun ke bawah */
+}
+
+.col-lg-6 h2 {
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+/* NAVBAR CSS JANGAN DIGANTI */
+
+
+.jurusan-section {
+    padding: 15px 0;
+    background-color: #f6f9fb;
+    min-height: 40px;
+    background-size: cover;
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.jurusan-content {
+    border: 2px solid #000;
+    border-radius: 0px;
+    padding: 15px;
+    margin: 2px 0px 3px 0px;
+    text-align: left;
+    flex: 1;
+}
+
+h3 {
+    font-family: Verdana, Geneva, sans-serif;
+    color: #000;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+ol {
+    list-style-type: lower-alpha;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.jurusan-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0056b3;
+    margin-bottom: 20px;
+}
+.box {
+    display: inline-block;
+    width: 306px;
+    margin: 10px;
+    text-align: center;
+}
+.box img {
+    width: 230px;
+    height: 230px;
+    background: gray;
+    border-radius: 0;
+    display: block;
+    margin: 0 auto 10px;
+}
+.position {
+    color: #0056b3;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.name {
+    color: gray;
+}
+.top-box {
+    display: flex;
+    justify-content: center;
+}
+.bottom-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.jurusan-section {
+    padding: 15px 0;
+    background-color: #f6f9fb;
+    min-height: 40px;
+    background-size: cover;
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0056b3;
+    margin-bottom: 20px;
+}
+.box {
+    display: inline-block;
+    width: 306px;
+    margin: 10px;
+    text-align: center;
+}
+.box img {
+    width: 306px;
+    height: 306px;
+    background: gray;
+    border-radius: 0;
+    display: block;
+    margin: 0 auto 10px;
+}
+.position {
+    color: #0056b3;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.section-header {
+    text-align: center;
+    margin-bottom: 2em;
+    padding-top: 100px;
+}
+
+.section-title {
+    display: inline-block;
+    padding-bottom: 5px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #232323;
+    border-bottom: 3px solid #01AEF0; /* Garis biru bawah */
+}
+
+/* Styling gambar */
+.image-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.image-row img {
+    width: 500px;
+    height: 298px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-row img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Sejarah */
+.history-section {
+    width: 80%;
+    margin: 0 auto;
+    text-align: left; /* Ubah dari center ke left */
+}
+
+.history-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #01AEF0;
+    margin-bottom: 10px;
+}
+
+.history-subtitle {
+    font-size: 25px;
+    font-weight: bold;
+    color: #232323;
+    margin-bottom: 15px;
+}
+
+.history-box {
+    border: 2px solid #000;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 1.5;
+    background: #fff;
+    text-align: left;
+}
+
+/* Styling untuk gambar Visi & Misi */
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.image-container img {
+    width: 60%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+.gallery-item {
+    position: relative;
+    width: 30%;
+    max-width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.gallery-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.gallery-item:hover::after {
+    opacity: 1;
+}
+@media (max-width: 768px) {
+    .gallery-item {
+        width: 45%;
+    }
+}
+@media (max-width: 480px) {
+    .gallery-item {
+        width: 90%;
+    }
+}
+@media (max-width: 768px) {
+    .image-container {
+        margin-bottom: 20px; /* Kurangi margin bottom pada mode responsif */
+    }
+}
+/* Styling teks Visi & Misi */
+.visi-misi-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #01AEF0;
+    margin-bottom: 5px;
+}
+
+.visi-misi-subtitle {
+    font-size: 22px;
+    font-weight: bold;
+    color: #232323;
+    margin-bottom: 15px;
+}
+
+/* Container Visi & Misi */
+.visi-misi-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.visi, .misi {
+    width: 40%;
+    min-width: 320px;
+    background: #fff;
+    padding: 20px;
+    border: 1.5px solid #000;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.visi-misi-title, .visi-misi-subtitle {
+    text-align: center;
+}
+.visi h3, .misi h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.visi p, .misi ul {
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.misi ul {
+    padding-left: 20px;
+    text-align: left;
+}
+
+.misi ul li {
+    margin-bottom: 6px;
+}
+.tujuan-container {
+    width: 80%;
+    max-width: 800px;
+    background: #fff;
+    padding: 20px;
+    border: 1.5px solid #000;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
+
+.tujuan-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #01AEF0;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.tujuan-subtitle {
+    font-size: 22px;
+    font-weight: bold;
+    color: #232323;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.tujuan-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.tujuan-list li {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+.footer-container {
+    background-color: #001D4C;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 0;
+}
+
+.footer-left, .footer-middle, .footer-right {
+    width: 30%;
+    color: white;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.footer-left a {
+    color: lightblue;
+    text-decoration: none;
+}
+
+.footer-left ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.footer-left ul li {
+    display: inline-block;
+}
+
+.footer-left ul li img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-middle ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-middle ul li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.footer-right iframe {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .footer-left, .footer-middle, .footer-right {
+        width: 100%;
+    }
+}
+
+.footer-copyright {
+    background-color: #0F2A57;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+/* NAVBAR CSS JANGAN DIGANTI */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 10px 0;
+    }
+
+    .navbar-toggler {
+        border-color: #007bff;
+    }
+}
+
+/* Responsif untuk tampilan lebih kecil */
+@media (max-width: 576px) {
+    .breadcrumb-area h2 {
+        font-size: 20px;
+    }
+    .breadcrumb-area .breadcrumb {
+        font-size: 12px;
+    }
+}
+@media (max-width: 768px) {
+    .image-row img {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .history-section {
+        width: 90%;
+    }
+
+    .visi-misi-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .visi, .misi {
+        width: 90%;
+    }
+
+    .visi-misi-subtitle {
+        font-size: 18px;
+    }
+}
